@@ -1,0 +1,36 @@
+.header{
+    position: sticky;
+    top:0;
+    z-index: 1;
+    background-color:white;
+    padding: 20px;
+    object-fit:contain;
+    border-bottom: 1px solid lightgray;
+    display:flex;
+    justify-content: space-between;
+    
+  }
+
+.header__logo{
+    object-fit: contain;
+}
+.header__avatar{
+    margin-right: 10px;
+    opacity: 70%;
+}:hover{
+  opacity: 100%;
+}
+.header__loginContainer{
+  display: flex;
+  flex-direction: row;
+
+}
+.header__button{
+  background-color: transparent;
+  border:none;
+  color: lightgray;
+  
+}:hover{
+  color: black;
+  font-weight: 400;
+}

@@ -1,0 +1,11 @@
+.posts{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .posts__Left{
+    margin-right: 30px;
+  }
+  .posts__Right{
+    margin-left:20px;
+  }

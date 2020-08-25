@@ -3,10 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import LayoutContextProvider from './contexts/LayoutContext';
+import AuthContextProvider from './contexts/AuthContext';
+import PostsContextProvider from './contexts/PostsContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AuthContextProvider>
+      <PostsContextProvider>
+        <LayoutContextProvider>
+          <App />
+        </LayoutContextProvider>
+      </PostsContextProvider>
+    </AuthContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
